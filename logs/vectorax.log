@@ -1,0 +1,504 @@
+2026-03-23 21:12:56,388 - vectorax - INFO - Cycle start. Open positions: 0/4
+2026-03-23 21:12:56,388 - vectorax - INFO - Cycle start. Open positions: 0/4
+2026-03-23 21:12:57,063 - vectorax - WARNING - Fetch attempt 1 failed for BTCUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=BTCUSD&resolution=5&limit=200
+2026-03-23 21:12:57,063 - vectorax - WARNING - Fetch attempt 1 failed for BTCUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=BTCUSD&resolution=5&limit=200
+2026-03-23 21:12:58,731 - vectorax - WARNING - Fetch attempt 2 failed for BTCUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=BTCUSD&resolution=5&limit=200
+2026-03-23 21:12:58,731 - vectorax - WARNING - Fetch attempt 2 failed for BTCUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=BTCUSD&resolution=5&limit=200
+2026-03-23 21:13:01,345 - vectorax - WARNING - Fetch attempt 3 failed for BTCUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=BTCUSD&resolution=5&limit=200
+2026-03-23 21:13:01,345 - vectorax - WARNING - Fetch attempt 3 failed for BTCUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=BTCUSD&resolution=5&limit=200
+2026-03-23 21:13:01,347 - vectorax - ERROR - Fetch failed after 3 attempts BTCUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=BTCUSD&resolution=5&limit=200
+2026-03-23 21:13:01,347 - vectorax - ERROR - Fetch failed after 3 attempts BTCUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=BTCUSD&resolution=5&limit=200
+2026-03-23 21:13:02,334 - vectorax - WARNING - Fetch attempt 1 failed for ETHUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=ETHUSD&resolution=5&limit=200
+2026-03-23 21:13:02,334 - vectorax - WARNING - Fetch attempt 1 failed for ETHUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=ETHUSD&resolution=5&limit=200
+2026-03-23 21:13:04,368 - vectorax - WARNING - Fetch attempt 2 failed for ETHUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=ETHUSD&resolution=5&limit=200
+2026-03-23 21:13:04,368 - vectorax - WARNING - Fetch attempt 2 failed for ETHUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=ETHUSD&resolution=5&limit=200
+2026-03-23 21:13:07,044 - vectorax - WARNING - Fetch attempt 3 failed for ETHUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=ETHUSD&resolution=5&limit=200
+2026-03-23 21:13:07,044 - vectorax - WARNING - Fetch attempt 3 failed for ETHUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=ETHUSD&resolution=5&limit=200
+2026-03-23 21:13:07,045 - vectorax - ERROR - Fetch failed after 3 attempts ETHUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=ETHUSD&resolution=5&limit=200
+2026-03-23 21:13:07,045 - vectorax - ERROR - Fetch failed after 3 attempts ETHUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=ETHUSD&resolution=5&limit=200
+2026-03-23 21:13:07,049 - vectorax - INFO - Cycle complete. Sleeping 300s...
+2026-03-23 21:13:07,049 - vectorax - INFO - Cycle complete. Sleeping 300s...
+2026-03-23 21:14:01,625 - vectorax - INFO - Shutdown signal received. Closing positions...
+2026-03-23 21:14:01,625 - vectorax - INFO - Shutdown signal received. Closing positions...
+2026-03-23 21:25:35,221 - vectorax - INFO - Cycle start. Open positions: 0/4
+2026-03-23 21:25:35,221 - vectorax - INFO - Cycle start. Open positions: 0/4
+2026-03-23 21:25:36,026 - vectorax - WARNING - Fetch attempt 1 failed for BTCUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=BTCUSD&resolution=5m&start=1774221335222&end=1774281335222&limit=200
+2026-03-23 21:25:36,026 - vectorax - WARNING - Fetch attempt 1 failed for BTCUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=BTCUSD&resolution=5m&start=1774221335222&end=1774281335222&limit=200
+2026-03-23 21:25:37,859 - vectorax - WARNING - Fetch attempt 2 failed for BTCUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=BTCUSD&resolution=5m&start=1774221335222&end=1774281335222&limit=200
+2026-03-23 21:25:37,859 - vectorax - WARNING - Fetch attempt 2 failed for BTCUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=BTCUSD&resolution=5m&start=1774221335222&end=1774281335222&limit=200
+2026-03-23 21:25:40,431 - vectorax - WARNING - Fetch attempt 3 failed for BTCUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=BTCUSD&resolution=5m&start=1774221335222&end=1774281335222&limit=200
+2026-03-23 21:25:40,431 - vectorax - WARNING - Fetch attempt 3 failed for BTCUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=BTCUSD&resolution=5m&start=1774221335222&end=1774281335222&limit=200
+2026-03-23 21:25:40,432 - vectorax - ERROR - Fetch failed after 3 attempts BTCUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=BTCUSD&resolution=5m&start=1774221335222&end=1774281335222&limit=200
+2026-03-23 21:25:40,432 - vectorax - ERROR - Fetch failed after 3 attempts BTCUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=BTCUSD&resolution=5m&start=1774221335222&end=1774281335222&limit=200
+2026-03-23 21:25:41,166 - vectorax - WARNING - Fetch attempt 1 failed for ETHUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=ETHUSD&resolution=5m&start=1774221340436&end=1774281340436&limit=200
+2026-03-23 21:25:41,166 - vectorax - WARNING - Fetch attempt 1 failed for ETHUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=ETHUSD&resolution=5m&start=1774221340436&end=1774281340436&limit=200
+2026-03-23 21:25:43,511 - vectorax - WARNING - Fetch attempt 2 failed for ETHUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=ETHUSD&resolution=5m&start=1774221340436&end=1774281340436&limit=200
+2026-03-23 21:25:43,511 - vectorax - WARNING - Fetch attempt 2 failed for ETHUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=ETHUSD&resolution=5m&start=1774221340436&end=1774281340436&limit=200
+2026-03-23 21:25:46,184 - vectorax - WARNING - Fetch attempt 3 failed for ETHUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=ETHUSD&resolution=5m&start=1774221340436&end=1774281340436&limit=200
+2026-03-23 21:25:46,184 - vectorax - WARNING - Fetch attempt 3 failed for ETHUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=ETHUSD&resolution=5m&start=1774221340436&end=1774281340436&limit=200
+2026-03-23 21:25:46,186 - vectorax - ERROR - Fetch failed after 3 attempts ETHUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=ETHUSD&resolution=5m&start=1774221340436&end=1774281340436&limit=200
+2026-03-23 21:25:46,186 - vectorax - ERROR - Fetch failed after 3 attempts ETHUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=ETHUSD&resolution=5m&start=1774221340436&end=1774281340436&limit=200
+2026-03-23 21:25:46,189 - vectorax - INFO - Cycle complete. Sleeping 300s...
+2026-03-23 21:25:46,189 - vectorax - INFO - Cycle complete. Sleeping 300s...
+2026-03-23 21:28:07,764 - vectorax - INFO - Shutdown signal received. Closing positions...
+2026-03-23 21:28:07,764 - vectorax - INFO - Shutdown signal received. Closing positions...
+2026-03-23 21:28:19,239 - vectorax - INFO - Cycle start. Open positions: 0/4
+2026-03-23 21:28:19,239 - vectorax - INFO - Cycle start. Open positions: 0/4
+2026-03-23 21:28:19,927 - vectorax - WARNING - Fetch attempt 1 failed for BTCUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=BTCUSD&resolution=5m&start=1774221499240&end=1774281499240&limit=200
+2026-03-23 21:28:19,927 - vectorax - WARNING - Fetch attempt 1 failed for BTCUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=BTCUSD&resolution=5m&start=1774221499240&end=1774281499240&limit=200
+2026-03-23 21:28:22,081 - vectorax - WARNING - Fetch attempt 2 failed for BTCUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=BTCUSD&resolution=5m&start=1774221499240&end=1774281499240&limit=200
+2026-03-23 21:28:22,081 - vectorax - WARNING - Fetch attempt 2 failed for BTCUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=BTCUSD&resolution=5m&start=1774221499240&end=1774281499240&limit=200
+2026-03-23 21:28:25,050 - vectorax - WARNING - Fetch attempt 3 failed for BTCUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=BTCUSD&resolution=5m&start=1774221499240&end=1774281499240&limit=200
+2026-03-23 21:28:25,050 - vectorax - WARNING - Fetch attempt 3 failed for BTCUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=BTCUSD&resolution=5m&start=1774221499240&end=1774281499240&limit=200
+2026-03-23 21:28:25,051 - vectorax - ERROR - Fetch failed after 3 attempts BTCUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=BTCUSD&resolution=5m&start=1774221499240&end=1774281499240&limit=200
+2026-03-23 21:28:25,051 - vectorax - ERROR - Fetch failed after 3 attempts BTCUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=BTCUSD&resolution=5m&start=1774221499240&end=1774281499240&limit=200
+2026-03-23 21:28:25,841 - vectorax - WARNING - Fetch attempt 1 failed for ETHUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=ETHUSD&resolution=5m&start=1774221505055&end=1774281505055&limit=200
+2026-03-23 21:28:25,841 - vectorax - WARNING - Fetch attempt 1 failed for ETHUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=ETHUSD&resolution=5m&start=1774221505055&end=1774281505055&limit=200
+2026-03-23 21:28:28,023 - vectorax - WARNING - Fetch attempt 2 failed for ETHUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=ETHUSD&resolution=5m&start=1774221505055&end=1774281505055&limit=200
+2026-03-23 21:28:28,023 - vectorax - WARNING - Fetch attempt 2 failed for ETHUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=ETHUSD&resolution=5m&start=1774221505055&end=1774281505055&limit=200
+2026-03-23 21:28:30,681 - vectorax - WARNING - Fetch attempt 3 failed for ETHUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=ETHUSD&resolution=5m&start=1774221505055&end=1774281505055&limit=200
+2026-03-23 21:28:30,681 - vectorax - WARNING - Fetch attempt 3 failed for ETHUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=ETHUSD&resolution=5m&start=1774221505055&end=1774281505055&limit=200
+2026-03-23 21:28:30,682 - vectorax - ERROR - Fetch failed after 3 attempts ETHUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=ETHUSD&resolution=5m&start=1774221505055&end=1774281505055&limit=200
+2026-03-23 21:28:30,682 - vectorax - ERROR - Fetch failed after 3 attempts ETHUSD: 400 Client Error: Bad Request for url: https://api.delta.exchange/v2/history/candles?symbol=ETHUSD&resolution=5m&start=1774221505055&end=1774281505055&limit=200
+2026-03-23 21:28:30,689 - vectorax - INFO - Cycle complete. Sleeping 300s...
+2026-03-23 21:28:30,689 - vectorax - INFO - Cycle complete. Sleeping 300s...
+2026-03-23 21:32:45,255 - vectorax - INFO - Vectorax Trading Bot Started
+2026-03-23 21:32:45,255 - vectorax - INFO - Vectorax Trading Bot Started
+2026-03-23 21:32:46,587 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 21:32:46,587 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 21:32:47,313 - vectorax - WARNING - No candle data for BTCUSD_PERP
+2026-03-23 21:32:47,313 - vectorax - WARNING - No candle data for BTCUSD_PERP
+2026-03-23 21:32:47,316 - vectorax - WARNING - Not enough candle data for BTCUSD_PERP
+2026-03-23 21:32:47,316 - vectorax - WARNING - Not enough candle data for BTCUSD_PERP
+2026-03-23 21:32:48,156 - vectorax - WARNING - No candle data for ETHUSD_PERP
+2026-03-23 21:32:48,156 - vectorax - WARNING - No candle data for ETHUSD_PERP
+2026-03-23 21:32:48,158 - vectorax - WARNING - Not enough candle data for ETHUSD_PERP
+2026-03-23 21:32:48,158 - vectorax - WARNING - Not enough candle data for ETHUSD_PERP
+2026-03-23 21:32:48,159 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 21:32:48,159 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 21:34:34,325 - vectorax - INFO - Shutdown signal received. Closing bot safely...
+2026-03-23 21:34:34,325 - vectorax - INFO - Shutdown signal received. Closing bot safely...
+2026-03-23 21:35:15,169 - vectorax - INFO - Vectorax Trading Bot Started
+2026-03-23 21:35:15,169 - vectorax - INFO - Vectorax Trading Bot Started
+2026-03-23 21:35:16,797 - vectorax - INFO - Telegram alert sent ✅
+2026-03-23 21:35:16,797 - vectorax - INFO - Telegram alert sent ✅
+2026-03-23 21:35:16,800 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 21:35:16,800 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 21:35:18,030 - vectorax - WARNING - No candle data for BTCUSD_PERP
+2026-03-23 21:35:18,030 - vectorax - WARNING - No candle data for BTCUSD_PERP
+2026-03-23 21:35:18,032 - vectorax - WARNING - Not enough candle data for BTCUSD_PERP
+2026-03-23 21:35:18,032 - vectorax - WARNING - Not enough candle data for BTCUSD_PERP
+2026-03-23 21:35:19,052 - vectorax - WARNING - No candle data for ETHUSD_PERP
+2026-03-23 21:35:19,052 - vectorax - WARNING - No candle data for ETHUSD_PERP
+2026-03-23 21:35:19,056 - vectorax - WARNING - Not enough candle data for ETHUSD_PERP
+2026-03-23 21:35:19,056 - vectorax - WARNING - Not enough candle data for ETHUSD_PERP
+2026-03-23 21:35:19,057 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 21:35:19,057 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 21:36:38,790 - vectorax - INFO - Shutdown signal received. Closing bot safely...
+2026-03-23 21:36:38,790 - vectorax - INFO - Shutdown signal received. Closing bot safely...
+2026-03-23 21:45:18,855 - vectorax - INFO - Vectorax Trading Bot Started
+2026-03-23 21:45:18,855 - vectorax - INFO - Vectorax Trading Bot Started
+2026-03-23 21:45:20,455 - vectorax - INFO - Telegram alert sent ✅
+2026-03-23 21:45:20,455 - vectorax - INFO - Telegram alert sent ✅
+2026-03-23 21:45:20,459 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 21:45:20,459 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 21:45:21,171 - vectorax - WARNING - No candle data for BTCUSD_PERP
+2026-03-23 21:45:21,171 - vectorax - WARNING - No candle data for BTCUSD_PERP
+2026-03-23 21:45:21,174 - vectorax - WARNING - Not enough candle data for BTCUSD_PERP
+2026-03-23 21:45:21,174 - vectorax - WARNING - Not enough candle data for BTCUSD_PERP
+2026-03-23 21:45:22,307 - vectorax - WARNING - No candle data for ETHUSD_PERP
+2026-03-23 21:45:22,307 - vectorax - WARNING - No candle data for ETHUSD_PERP
+2026-03-23 21:45:22,310 - vectorax - WARNING - Not enough candle data for ETHUSD_PERP
+2026-03-23 21:45:22,310 - vectorax - WARNING - Not enough candle data for ETHUSD_PERP
+2026-03-23 21:45:22,311 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 21:45:22,311 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 21:49:31,487 - vectorax - INFO - Shutdown signal received. Closing bot safely...
+2026-03-23 21:49:31,487 - vectorax - INFO - Shutdown signal received. Closing bot safely...
+2026-03-23 21:55:34,031 - vectorax - INFO - 🚀 Vectorax Trading Bot Started 🚀
+2026-03-23 21:55:34,031 - vectorax - INFO - 🚀 Vectorax Trading Bot Started 🚀
+2026-03-23 21:55:35,500 - vectorax - INFO - Telegram alert sent ✅
+2026-03-23 21:55:35,500 - vectorax - INFO - Telegram alert sent ✅
+2026-03-23 21:55:35,504 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 21:55:35,504 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 21:55:36,498 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 21:55:36,498 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 21:55:36,502 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 21:55:36,502 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 21:55:37,435 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 21:55:37,435 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 21:55:37,438 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 21:55:37,438 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 21:55:37,439 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 21:55:37,439 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 21:55:54,245 - vectorax - INFO - 🚀 Vectorax Trading Bot Started 🚀
+2026-03-23 21:55:54,245 - vectorax - INFO - 🚀 Vectorax Trading Bot Started 🚀
+2026-03-23 21:55:55,739 - vectorax - INFO - Telegram alert sent ✅
+2026-03-23 21:55:55,739 - vectorax - INFO - Telegram alert sent ✅
+2026-03-23 21:55:55,742 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 21:55:55,742 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 21:55:56,876 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 21:55:56,876 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 21:55:56,879 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 21:55:56,879 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 21:55:57,701 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 21:55:57,701 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 21:55:57,707 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 21:55:57,707 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 21:55:57,708 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 21:55:57,708 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:00:37,441 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:00:37,441 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:00:38,477 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:00:38,477 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:00:38,481 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:00:38,481 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:00:39,426 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:00:39,426 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:00:39,430 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:00:39,430 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:00:39,431 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:00:39,431 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:00:57,711 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:00:57,711 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:00:58,754 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:00:58,754 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:00:58,756 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:00:58,756 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:00:59,943 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:00:59,943 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:00:59,947 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:00:59,947 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:00:59,948 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:00:59,948 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:02:58,665 - vectorax - INFO - ✅ API health check passed
+2026-03-23 22:02:58,665 - vectorax - INFO - ✅ API health check passed
+2026-03-23 22:02:58,667 - vectorax - INFO - 🚀 Vectorax Trading Bot Started (Testnet/Live Ready) 🚀
+2026-03-23 22:02:58,667 - vectorax - INFO - 🚀 Vectorax Trading Bot Started (Testnet/Live Ready) 🚀
+2026-03-23 22:02:59,996 - vectorax - INFO - Telegram alert sent ✅
+2026-03-23 22:02:59,996 - vectorax - INFO - Telegram alert sent ✅
+2026-03-23 22:02:59,999 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:02:59,999 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:03:01,279 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:03:01,279 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:03:01,282 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:03:01,282 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:03:02,132 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:03:02,132 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:03:02,134 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:03:02,134 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:03:02,135 - vectorax - INFO - Cycle complete. Sleeping 300s ⏳
+2026-03-23 22:03:02,135 - vectorax - INFO - Cycle complete. Sleeping 300s ⏳
+2026-03-23 22:05:39,432 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:05:39,432 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:05:40,233 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:05:40,233 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:05:40,237 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:05:40,237 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:05:40,979 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:05:40,979 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:05:40,982 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:05:40,982 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:05:40,982 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:05:40,982 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:05:59,949 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:05:59,949 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:06:01,358 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:06:01,358 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:06:01,362 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:06:01,362 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:06:01,941 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:06:01,941 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:06:01,944 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:06:01,944 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:06:01,945 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:06:01,945 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:08:02,136 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:08:02,136 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:08:03,319 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:08:03,319 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:08:03,323 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:08:03,323 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:08:04,190 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:08:04,190 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:08:04,192 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:08:04,192 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:08:04,193 - vectorax - INFO - Cycle complete. Sleeping 300s ⏳
+2026-03-23 22:08:04,193 - vectorax - INFO - Cycle complete. Sleeping 300s ⏳
+2026-03-23 22:10:40,984 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:10:40,984 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:10:42,565 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:10:42,565 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:10:42,570 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:10:42,570 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:10:43,564 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:10:43,564 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:10:43,566 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:10:43,566 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:10:43,567 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:10:43,567 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:11:01,947 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:11:01,947 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:11:04,047 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:11:04,047 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:11:04,050 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:11:04,050 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:11:05,381 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:11:05,381 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:11:05,385 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:11:05,385 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:11:05,387 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:11:05,387 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:12:54,168 - vectorax - INFO - Shutdown signal received. Closing bot safely...
+2026-03-23 22:12:54,168 - vectorax - INFO - Shutdown signal received. Closing bot safely...
+2026-03-23 22:15:43,569 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:15:43,569 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:15:44,264 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:15:44,264 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:15:44,267 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:15:44,267 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:15:44,933 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:15:44,933 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:15:44,936 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:15:44,936 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:15:44,936 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:15:44,936 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:16:05,390 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:16:05,390 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:16:08,035 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:16:08,035 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:16:08,041 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:16:08,041 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:16:08,874 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:16:08,874 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:16:08,877 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:16:08,877 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:16:08,878 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:16:08,878 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:20:44,937 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:20:44,937 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:20:46,398 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:20:46,398 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:20:46,400 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:20:46,400 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:20:47,114 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:20:47,114 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:20:47,117 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:20:47,117 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:20:47,117 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:20:47,117 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:21:08,879 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:21:08,879 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:21:09,779 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:21:09,779 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:21:09,781 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:21:09,781 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:21:10,502 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:21:10,502 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:21:10,506 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:21:10,506 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:21:10,507 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:21:10,507 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:25:47,119 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:25:47,119 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:25:48,312 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:25:48,312 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:25:48,314 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:25:48,314 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:25:49,386 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:25:49,386 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:25:49,389 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:25:49,389 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:25:49,390 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:25:49,390 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:26:10,508 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:26:10,508 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:26:11,362 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:26:11,362 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:26:11,364 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:26:11,364 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:26:12,143 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:26:12,143 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:26:12,145 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:26:12,145 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:26:12,146 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:26:12,146 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:30:49,391 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:30:49,391 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:30:50,391 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:30:50,391 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:30:50,394 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:30:50,394 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:30:51,345 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:30:51,345 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:30:51,348 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:30:51,348 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:30:51,349 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:30:51,349 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:31:12,147 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:31:12,147 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:31:13,673 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:31:13,673 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:31:13,677 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:31:13,677 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:31:16,437 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:31:16,437 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:31:16,440 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:31:16,440 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:31:16,441 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:31:16,441 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:35:51,350 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:35:51,350 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:35:52,588 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:35:52,588 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:35:52,591 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:35:52,591 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:35:53,372 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:35:53,372 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:35:53,375 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:35:53,375 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:35:53,376 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:35:53,376 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:36:16,443 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:36:16,443 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:36:17,481 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:36:17,481 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:36:17,490 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:36:17,490 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:36:18,459 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:36:18,459 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:36:18,462 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:36:18,462 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:36:18,464 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:36:18,464 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:40:53,377 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:40:53,377 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:40:54,768 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:40:54,768 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:40:54,772 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:40:54,772 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:40:55,855 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:40:55,855 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:40:55,858 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:40:55,858 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:40:55,859 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:40:55,859 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:41:18,466 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:41:18,466 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:41:19,736 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:41:19,736 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:41:19,739 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:41:19,739 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:41:20,570 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:41:20,570 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:41:20,572 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:41:20,572 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:41:20,573 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:41:20,573 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:45:55,861 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:45:55,861 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:45:56,816 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:45:56,816 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:45:56,818 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:45:56,818 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:45:57,536 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:45:57,536 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:45:57,539 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:45:57,539 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:45:57,540 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:45:57,540 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:46:20,574 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:46:20,574 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:46:21,181 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:46:21,181 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:46:21,182 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:46:21,182 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:46:22,411 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:46:22,411 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:46:22,413 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:46:22,413 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:46:22,414 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:46:22,414 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:50:57,542 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:50:57,542 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:50:58,622 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:50:58,622 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:50:58,626 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:50:58,626 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:50:59,200 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:50:59,200 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:50:59,202 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:50:59,202 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:50:59,203 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:50:59,203 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:51:22,415 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:51:22,415 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:51:23,140 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:51:23,140 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:51:23,142 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:51:23,142 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:51:24,347 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:51:24,347 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:51:24,351 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:51:24,351 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:51:24,352 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:51:24,352 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:55:59,203 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:55:59,203 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:55:59,793 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:55:59,793 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:55:59,795 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:55:59,795 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:56:00,686 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:56:00,686 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:56:00,687 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:56:00,687 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:56:00,687 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:56:00,687 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:56:24,353 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:56:24,353 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 22:56:25,145 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:56:25,145 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 22:56:25,148 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:56:25,148 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 22:56:26,066 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:56:26,066 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 22:56:26,070 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:56:26,070 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 22:56:26,071 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 22:56:26,071 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 23:01:00,688 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 23:01:00,688 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 23:01:01,422 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 23:01:01,422 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 23:01:01,425 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 23:01:01,425 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 23:01:02,037 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 23:01:02,037 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 23:01:02,040 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 23:01:02,040 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 23:01:02,041 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 23:01:02,041 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 23:01:26,073 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 23:01:26,073 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 23:01:26,617 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 23:01:26,617 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 23:01:26,620 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 23:01:26,620 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 23:01:27,548 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 23:01:27,548 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 23:01:27,550 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 23:01:27,550 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 23:01:27,551 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 23:01:27,551 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 23:06:02,042 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 23:06:02,042 - vectorax - INFO - Cycle start | Open positions: 0/4
+2026-03-23 23:06:03,001 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 23:06:03,001 - vectorax - WARNING - No candle data for BTCUSD
+2026-03-23 23:06:03,004 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 23:06:03,004 - vectorax - WARNING - Not enough candle data for BTCUSD
+2026-03-23 23:06:03,718 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 23:06:03,718 - vectorax - WARNING - No candle data for ETHUSD
+2026-03-23 23:06:03,719 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 23:06:03,719 - vectorax - WARNING - Not enough candle data for ETHUSD
+2026-03-23 23:06:03,720 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
+2026-03-23 23:06:03,720 - vectorax - INFO - Cycle complete. Sleeping 300 seconds
