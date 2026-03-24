@@ -3,7 +3,7 @@ import json
 import hmac
 import hashlib
 import time
-import os  # Missing import
+import os
 from config import API_KEY, API_SECRET, BASE_URL, TESTNET
 from logger import logger
 try:
