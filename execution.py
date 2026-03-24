@@ -15,7 +15,7 @@ def signature(payload):
     ).hexdigest()
 
 def get_product_id(symbol: str) -> str | None:
-    \"\"\"Fetch product_id for symbol from Delta API.\"\"\"
+   """Fetch product_id for symbol from Delta API."""
 
     try:
         url = f\"{BASE_URL}/v2/products\"
