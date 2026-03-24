@@ -56,7 +56,7 @@ def write_summary():
     avg_loss = -0.01
     expected_return_per_trade = (win_rate * avg_win) + ((1-win_rate) * avg_loss)
     est_monthly_pct = est_monthly_trades * expected_return_per_trade * 100
-    
+
     summary = f"""Vectorax Trading Bot Summary
 Strategy: 5-minute S/R breakout + EMA/RSI/volume/trend confirmations + 1h HTF validation
 Risk Management: Stoploss=1%, Target=2.5%, RR=2.5, Max 3 positions, Min capital ₹200
@@ -71,7 +71,6 @@ Example monthly return (20 trades, 60% win rate): ~{est_monthly_pct:.1f}%
 
 # SL/TP Monitor & Close
 def monitor_positions():
-    """Check SL/TP for open positions each cycle."""
     for pos in tracker.get_open():
         current_price = get_ticker_price(pos.symbol)
         if current_price is None:
@@ -107,7 +106,16 @@ def monitor_positions():
 logger.info("🚀 Vectorax Trading Bot Started - 5m S/R + Multi-confirm + 1h HTF + 1%/2% RR2.0 🚀")
 send_alert("🚀 Vectorax Trading Bot Deployed - SL1% TP2% Max3pos Min₹200!")
 
-balance = get_balance()
+# Safe balance fetch with fallback
+try:
+    balance = get_balance()
+    if balance is None:
+        raise ValueError("Balance fetch returned None")
+except Exception as e:
+    logger.error(f"Balance fetch failed: {e}")
+    balance = 1000.0  # fallback
+    logger.info(f"Using fallback capital: ₹{balance:.2f}")
+
 trade_stats['capital_start'] = balance
 logger.info(f"Initial balance: ₹{balance:.2f}")
 
@@ -116,7 +124,17 @@ while True:
     try:
         trade_stats['cycles'] += 1
         open_positions = len(tracker.get_open())
-        balance = get_balance()
+
+        # Update balance safely
+        try:
+            balance = get_balance()
+            if balance is None:
+                raise ValueError("Balance fetch returned None")
+        except Exception as e:
+            logger.error(f"Balance fetch failed: {e}")
+            balance = 1000.0
+            logger.info(f"Using fallback capital: ₹{balance:.2f}")
+
         trade_stats['capital_end'] = balance
         logger.info(f"Cycle #{trade_stats['cycles']} | Positions: {open_positions}/{MAX_TRADES} | Balance: ₹{balance:.2f}")
 
@@ -132,7 +150,7 @@ while True:
 
         open_positions = len(tracker.get_open())
         if open_positions >= MAX_TRADES:
-            logger.info("Max 3 positions reached. Waiting 1h")
+            logger.info(f"Max {MAX_TRADES} positions reached. Waiting 1h")
             pos_summary = "\n".join([f"{p.symbol} {p.side} SL:{p.sl:.4f} TP:{p.tp:.4f}" for p in tracker.get_open()])
             send_alert(f"📊 Max positions ({open_positions}):\n{pos_summary}")
             write_summary()
@@ -147,8 +165,12 @@ while True:
                 df_5m = fetch_candles(symbol, '5m', 300)
                 df_1h = fetch_candles(symbol, '1h', 50)
 
-                if df_5m is None or len(df_5m) < 50 or df_1h is None or len(df_1h) < 20:
-                    logger.warning(f"Insufficient data {symbol} 5m:{len(df_5m) or 0} 1h:{len(df_1h) or 0}")
+                # Safe None/length check
+                len_5m = len(df_5m) if df_5m is not None else 0
+                len_1h = len(df_1h) if df_1h is not None else 0
+
+                if len_5m < 50 or len_1h < 20:
+                    logger.warning(f"Insufficient data {symbol} 5m:{len_5m} 1h:{len_1h}")
                     continue
 
                 signal_5m = generate_5min_signal(df_5m)
@@ -167,7 +189,7 @@ while True:
                     continue
 
                 result = place_order(symbol, signal_5m, params["size"], params["tp_price"], params["sl_price"])
-                if result["success"]:
+                if result.get("success"):
                     tracker.add_position(symbol, signal_5m, params["size"], entry_price, params["sl_price"], params["tp_price"])
                     trade_stats['trades_executed'] += 1
                     alert = f"✅ {symbol} {signal_5m}\nEntry: ₹{entry_price:.4f}\nSize: {params['size']}\nSL: ₹{params['sl_price']:.4f} (1%)\nTP: ₹{params['tp_price']:.4f} (2%)"
