@@ -50,13 +50,12 @@ trade_stats = {
 
 def write_summary():
     capital_used = trade_stats['capital_start'] - trade_stats['capital_end']
-    # Updated est for new settings: 20 trades/mo, 60% win, 1% risk, RR2.5 → net +1.2% per trade avg → 24% mo
-    est_monthly_trades = 20  # per req
+    est_monthly_trades = 20
     win_rate = 0.6
-    avg_win = 0.025  # 2.5%
-    avg_loss = -0.01  # -1%
+    avg_win = 0.025
+    avg_loss = -0.01
     expected_return_per_trade = (win_rate * avg_win) + ((1-win_rate) * avg_loss)
-    est_monthly_pct = est_monthly_trades * expected_return_per_trade * 100  # ~16%
+    est_monthly_pct = est_monthly_trades * expected_return_per_trade * 100
     
     summary = f"""Vectorax Trading Bot Summary
 Strategy: 5-minute S/R breakout + EMA/RSI/volume/trend confirmations + 1h HTF validation
@@ -64,16 +63,15 @@ Risk Management: Stoploss=1%, Target=2.5%, RR=2.5, Max 3 positions, Min capital 
 Number of cycles: {trade_stats['cycles']}
 Number of trades executed: {trade_stats['trades_executed']}
 Capital start: ${trade_stats['capital_start']:.2f} | Remaining: ${trade_stats['capital_end']:.2f} | Used: ${capital_used:.2f}
-Example monthly return (20 trades, 60% win rate): ~{est_monthly_pct:.1f}% (12 wins*2.5% - 8 losses*1% = +22%)
-
+Example monthly return (20 trades, 60% win rate): ~{est_monthly_pct:.1f}%
+"""
     with open(SUMMARY_FILE_PATH, 'a', encoding='utf-8') as f:
-        f.write(f"\n{summary}\n" + '='*80 + '\n')
+        f.write("\n" + summary + "="*80 + "\n")
     logger.info(f"📋 Summary written to {SUMMARY_FILE_PATH}")
 
 # SL/TP Monitor & Close
 def monitor_positions():
     """Check SL/TP for open positions each cycle."""
-
     for pos in tracker.get_open():
         current_price = get_ticker_price(pos.symbol)
         if current_price is None:
@@ -113,7 +111,7 @@ balance = get_balance()
 trade_stats['capital_start'] = balance
 logger.info(f"Initial balance: ${balance:.2f}")
 
-# Main Loop (1h cycles)
+# Main Loop
 while True:
     try:
         trade_stats['cycles'] += 1
@@ -121,7 +119,7 @@ while True:
         balance = get_balance()
         trade_stats['capital_end'] = balance
         logger.info(f"Cycle #{trade_stats['cycles']} | Positions: {open_positions}/{MAX_TRADES} | Balance: ${balance:.2f}")
-        
+
         if balance < 200:
             logger.warning(f"LOW BALANCE ${balance:.2f} < ₹200. Skipping trades.")
             send_alert(f"⚠️ LOW BALANCE ${balance:.2f} < ₹200 - Skipping")
@@ -129,7 +127,7 @@ while True:
             time.sleep(60)
             continue
 
-        # Monitor existing first
+        # Monitor existing positions
         monitor_positions()
 
         open_positions = len(tracker.get_open())
@@ -139,7 +137,6 @@ while True:
             send_alert(f"📊 Max positions ({open_positions}):\n{pos_summary}")
             write_summary()
         else:
-            # Scan symbols for new trades
             for symbol in SYMBOLS:
                 if tracker.has_position(symbol):
                     logger.debug(f"Skip {symbol} (position open)")
@@ -147,7 +144,6 @@ while True:
 
                 logger.info(f"Scanning {symbol} for 5m breakout + 1h confirm...")
 
-                # Fetch data
                 df_5m = fetch_candles(symbol, '5m', 300)
                 df_1h = fetch_candles(symbol, '1h', 50)
 
@@ -155,7 +151,6 @@ while True:
                     logger.warning(f"Insufficient data {symbol} 5m:{len(df_5m) or 0} 1h:{len(df_1h) or 0}")
                     continue
 
-                # Generate & confirm signal
                 signal_5m = generate_5min_signal(df_5m)
                 if signal_5m == "WAIT":
                     continue
@@ -166,16 +161,12 @@ while True:
                 logger.info(f"🚀 {signal_5m} SIGNAL CONFIRMED w/ multi-confirmations {symbol}")
 
                 entry_price = df_5m["close"].iloc[-1]
-
-                # Calc fixed risk params (no ATR needed)
                 params = calculate_trade_params(signal_5m, entry_price)
                 if params is None:
                     logger.warning(f"Risk params invalid for {symbol}")
                     continue
 
-                # Execute
                 result = place_order(symbol, signal_5m, params["size"], params["tp_price"], params["sl_price"])
-
                 if result["success"]:
                     tracker.add_position(symbol, signal_5m, params["size"], entry_price, params["sl_price"], params["tp_price"])
                     trade_stats['trades_executed'] += 1
@@ -201,4 +192,3 @@ write_summary()
 final_open = len(tracker.get_open())
 logger.info(f"🏁 Bot stopped. Cycles: {trade_stats['cycles']} | Trades: {trade_stats['trades_executed']} | Open: {final_open}")
 send_alert(f"🏁 Bot STOPPED | Trades: {trade_stats['trades_executed']} | Open: {final_open} | See summary.txt & logs/vectorax.log")
-
