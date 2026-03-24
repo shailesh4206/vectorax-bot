@@ -62,7 +62,7 @@ Strategy: 5-minute S/R breakout + EMA/RSI/volume/trend confirmations + 1h HTF va
 Risk Management: Stoploss=1%, Target=2.5%, RR=2.5, Max 3 positions, Min capital ₹200
 Number of cycles: {trade_stats['cycles']}
 Number of trades executed: {trade_stats['trades_executed']}
-Capital start: ${trade_stats['capital_start']:.2f} | Remaining: ${trade_stats['capital_end']:.2f} | Used: ${capital_used:.2f}
+Capital start: ₹{trade_stats['capital_start']:.2f} | Remaining: ₹{trade_stats['capital_end']:.2f} | Used: ₹{capital_used:.2f}
 Example monthly return (20 trades, 60% win rate): ~{est_monthly_pct:.1f}%
 """
     with open(SUMMARY_FILE_PATH, 'a', encoding='utf-8') as f:
@@ -109,7 +109,7 @@ send_alert("🚀 Vectorax Trading Bot Deployed - SL1% TP2% Max3pos Min₹200!")
 
 balance = get_balance()
 trade_stats['capital_start'] = balance
-logger.info(f"Initial balance: ${balance:.2f}")
+logger.info(f"Initial balance: ₹{balance:.2f}")
 
 # Main Loop
 while True:
@@ -118,11 +118,11 @@ while True:
         open_positions = len(tracker.get_open())
         balance = get_balance()
         trade_stats['capital_end'] = balance
-        logger.info(f"Cycle #{trade_stats['cycles']} | Positions: {open_positions}/{MAX_TRADES} | Balance: ${balance:.2f}")
+        logger.info(f"Cycle #{trade_stats['cycles']} | Positions: {open_positions}/{MAX_TRADES} | Balance: ₹{balance:.2f}")
 
         if balance < 200:
-            logger.warning(f"LOW BALANCE ${balance:.2f} < ₹200. Skipping trades.")
-            send_alert(f"⚠️ LOW BALANCE ${balance:.2f} < ₹200 - Skipping")
+            logger.warning(f"LOW BALANCE ₹{balance:.2f} < ₹200. Skipping trades.")
+            send_alert(f"⚠️ LOW BALANCE ₹{balance:.2f} < ₹200 - Skipping")
             write_summary()
             time.sleep(60)
             continue
@@ -170,7 +170,7 @@ while True:
                 if result["success"]:
                     tracker.add_position(symbol, signal_5m, params["size"], entry_price, params["sl_price"], params["tp_price"])
                     trade_stats['trades_executed'] += 1
-                    alert = f"✅ {symbol} {signal_5m}\nEntry: ${entry_price:.4f}\nSize: {params['size']}\nSL: ${params['sl_price']:.4f} (1%)\nTP: ${params['tp_price']:.4f} (2%)"
+                    alert = f"✅ {symbol} {signal_5m}\nEntry: ₹{entry_price:.4f}\nSize: {params['size']}\nSL: ₹{params['sl_price']:.4f} (1%)\nTP: ₹{params['tp_price']:.4f} (2%)"
                     send_alert(alert)
                     logger.info(f"✅ Trade #{trade_stats['trades_executed']} executed {symbol}")
                 else:

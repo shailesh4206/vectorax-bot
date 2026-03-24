@@ -6,6 +6,7 @@ import time
 import os
 from config import API_KEY, API_SECRET, BASE_URL, TESTNET
 from logger import logger
+
 try:
     from telegram_alerts import send_alert  # Import at top
 except ImportError:
@@ -115,7 +116,7 @@ def place_order(symbol: str, side: str, size: float, tp_price: float = None, sl_
     return {'success': False, 'error': 'Failed after 3 attempts'}
 
 def get_balance():
-    """Fetch USDT wallet balance/equity for small capital sizing."""
+    """Fetch USDT wallet balance/equity for small capital sizing (₹ fallback)."""
     try:
         timestamp = int(time.time() * 1000)
         payload = {"timestamp": timestamp}
@@ -130,13 +131,13 @@ def get_balance():
             for asset in data['result']:
                 if asset.get('asset', '').upper() == 'USDT':
                     equity = float(asset.get('equity', 0))
-                    logger.info(f"💰 Balance: ${equity:.2f} USDT")
+                    logger.info(f"💰 Balance: ₹{equity:.2f} USDT")
                     return equity
-        logger.warning("No USDT balance found")
-        return float(os.getenv("CAPITAL", "200"))  # Fallback
+        logger.warning("No USDT balance found, using fallback ₹200")
+        return float(os.getenv("CAPITAL", "200"))  # ₹ fallback
     except Exception as e:
-        logger.error(f"Balance fetch error: {e}")
-        return 200.0  # Default fallback
+        logger.error(f"Balance fetch error: {e}, using fallback ₹200")
+        return 200.0  # Default ₹ fallback
 
 def get_ticker_price(symbol: str) -> float | None:
     """Get current mark price."""
@@ -177,7 +178,6 @@ def close_position(symbol: str, side: str, size: float) -> dict:
         data = resp.json()
         if resp.status_code == 200 and data.get('success'):
             logger.info(f"🔒 Closed {symbol} {side} {size:.4f}")
-            # tracker.close_position(symbol)  # Uncomment if tracker exists
             return {'success': True, 'order_id': data['result'].get('order_id')}
         return {'success': False, 'error': str(data)}
     except Exception as e:
@@ -188,7 +188,7 @@ def close_position(symbol: str, side: str, size: float) -> dict:
 if __name__ == "__main__":
     print("🧪 Testing API functions...")
     balance = get_balance()
-    print(f"Balance: ${balance}")
+    print(f"Balance: ₹{balance}")
     
     price = get_ticker_price("BTCUSDT")
     print(f"BTC Price: {price}")
