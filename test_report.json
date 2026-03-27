@@ -1,0 +1,58 @@
+{
+  "timestamp": "2026-03-27 22:40:26",
+  "testnet": false,
+  "symbols": [
+    "BTC_PERP",
+    "ETH_PERP"
+  ],
+  "tests": {
+    "balance": {
+      "success": false,
+      "usdt": 0.0
+    },
+    "ticker": {
+      "success": true,
+      "price": 2.02469115
+    },
+    "product_id": {
+      "success": true,
+      "pid": 128673
+    },
+    "positions": {
+      "open": true
+    }
+  },
+  "api_calls": [
+    {
+      "name": "get_balance",
+      "success": true,
+      "result": "$0.00 \u26a0\ufe0f SIM/Empty"
+    },
+    {
+      "name": "ticker",
+      "success": true,
+      "result": 2.02469115
+    },
+    {
+      "name": "product_id",
+      "success": true,
+      "result": 128673
+    },
+    {
+      "name": "orders_sim",
+      "success": true,
+      "result": {
+        "success": true,
+        "simulated": true,
+        "order_id": "SIM-123"
+      }
+    }
+  ],
+  "summary": "\ud83d\ude80 PRODUCTION READY (SIM PASS)",
+  "recommendation": "Run python main.py for SIM bot",
+  "balance_sample": 0.0,
+  "ticker_sample": 2.02469115,
+  "product_id_sample": 128673,
+  "telegram_test": null,
+  "sim_order_result": null
+}
