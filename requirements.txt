@@ -1,0 +1,9 @@
+pandas==2.2.2
+numpy==1.26.4
+requests==2.32.5
+python-dotenv==1.0.1
+PyYAML==6.0.3
+ccxt==4.3.92
+python-telegram-bot==21.4
+delta-rest-client==0.0.9
+ta==0.10.2
